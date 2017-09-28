@@ -1,103 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
-
-Name       : Skeleton 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20130902
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<!--<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>-->
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-<script language="javascript">
-
-
-	var elements = ["about", "resources", "leaders"];
-	var bttns = ["aboutBttn", "resourcesBttn", "leadersBttn"];
-	function hideElements() {
-		for(var i = 0; i < elements.length; i++)
-		{
-			var el = document.getElementById(elements[i])
-			el.style.display = 'none'
-		}
-	}
-	function changeButtonColor() {
-		for(var i = 0; i < bttns.length; i++)
-		{
-			var bttn = document.getElementById(bttns[i])
-			bttn.style.backgroundColor = " #008f95"
-		}
-	}
-	function showElement(element) {
-		hideElements()
-		changeButtonColor()
-		var showEl = document.getElementById(element)
-		var showBttn = document.getElementById(element+'Bttn')
-		showBttn.style.backgroundColor = '#eb6e80'	
-		showEl.style.display = 'block'
-	}
-	function showBttns() {
-		var ham = document.getElementById("showButtons")
-
-		if(ham.classList.contains("is-active")) {
-			ham.classList.remove("is-active")
-			for(var i = 0; i < bttns.length; i++) {
-				b = document.getElementById(bttns[i])
-				b.style.display = 'none';
-				if(i === bttns.length-1) {
-					document.getElementById(bttns[i]).style.boxShadow = "none"
-				}
-			}
-		}
-		else {
-			ham.classList.add("is-active")
-			for(var i = 0; i < bttns.length; i++) {
-				b = document.getElementById(bttns[i])
-				b.style.display = 'block';
-				if(i === bttns.length-1) {
-					document.getElementById(bttns[i]).style.boxShadow = "2px 2px 3px rgba(0, 0, 0, 0.4)"
-				}
-			}
-		}
-	}
-
-	/*var breakpoint = {};
-	breakpoint.refreshValue = function () {
-		this.value = window.getComputedStyle(
-		document.getElementsByTagName('body'), ':before'
-		).getPropertyValue('content').replace(/\"/g, '');
-	};
-	$(window).resize(function () {
- 		breakpoint.refreshValue();
- 		if(breakpoint.value === "desktop") {
-			 for(var i = 0; i < bttns.size; i++) {
-				 document.getElementById(bttns[i]).style.display = 'block';
-			 }
-			if(i === bttns.length-1) {
-				document.getElementById(bttns[i]).style.boxShadow = "2none"
-			}
-		 }
-	}).resize();*/
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Allies for Gender and Sexuality Inclusion</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+	<link href="index.css" rel="stylesheet" type="text/css" media="all" />
+	<script type='text/javascript' src='index.js' />
+	<script language="javascript">
 </script>
 </head>
 <body>
-
-	<div id="header">
+	<header>
 		<div id="logo">
 			<img src="images/pic02.jpg" alt="" />
 			<h1 style="color: white">Ally</h1>
@@ -105,15 +18,15 @@ Released   : 20130902
 		<div id="menu">
 			<div style = "margin-bottom: 0px;" id="showButtons" class="hamburger hamburger--slider" type="button" onclick="showBttns()">
  				<div class="hamburger-box">
-    				<div class="hamburger-inner"></div>
-  				</div>
+					<div class="hamburger-inner"></div>
+				</div>
 			</div>  
 			<button style="background-color:#eb6e80" id="aboutBttn" onclick="showElement('about')">About Us</button>
 			<button id = "resourcesBttn" onClick="showElement('resources')">Resources</button>
 			<button id = "leadersBttn" onClick="showElement('leaders')">Leaders</button>
 		</div>
+	</header>
 
-	</div>
 	<div id="main">
 	<div id="about" style="display:block;">
 		<div id="welcome">

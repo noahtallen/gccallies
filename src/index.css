@@ -1,21 +1,20 @@
-	html, body
-	{
-		height: 100%;
-	}
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: #ffffff;
+    font-family: 'Alegreya', serif;
+    font-size: 12pt;
+    font-weight: 300;
+    color: #000000;
+}
 	
-	body
-	{
-		margin: 0px;
-		padding: 0px;
-		background: #ffffff;
-		font-family: 'Alegreya', serif;
-		font-size: 12pt;
-		font-weight: 300;
-		color: #000000;
-	}
-	
-	
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
     font-weight: 600;
@@ -62,6 +61,12 @@ header h1 {
 
 #content {
     min-height: calc(100% - 100px);
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+#content div {
+    margin-top: 10px;
 }
 
 #main
@@ -77,38 +82,21 @@ header h1 {
     z-index: 0;
 }
 
-/*********************************************************************************/
-/* Featured                                                                      */
-/*********************************************************************************/
+#copyright {
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    background-color: #233237;
+    display: block;
+    letter-spacing: 0.20em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.80em;
+    color: #ffffff;
+}
 
-	/* #featured
-	{
-		margin-bottom: 3em;
-		padding-top: 5em;
-		border-top: 1px solid rgba(0,0,0,0.08);
-	} */
-
-/*********************************************************************************/
-/* Copyright                                                                     */
-/*********************************************************************************/
-
-	#copyright
-	{
-        height: 50px;
-        line-height: 50px;
-		overflow: hidden;
-        background-color: #233237;
-        display: block;
-		letter-spacing: 0.20em;
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 0.80em;
-		color: #ffffff;
-	}
-
-#about, #resources, #leaders
-{
-	padding: 30px 50px;
-	height: 100%;
-/*	overflow: visible;*/
-} 
+@media only screen and (max-width: 600px) {
+    #content {
+        padding: 10px;
+    }
+}

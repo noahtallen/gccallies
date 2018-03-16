@@ -3720,6 +3720,7 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		justify-content: center;
 		padding: 5em 5em 3em 5em ;
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
@@ -3727,7 +3728,8 @@
 
 		#footer > * {
 			width: calc(50% - 2em);
-			margin-left: 2em;
+			margin-left: 0;
+			text-align: center;
 		}
 
 		#footer .copyright {
@@ -3761,7 +3763,7 @@
 				}
 
 				#footer .copyright {
-					text-align: left;
+					text-align: center;
 				}
 
 		}

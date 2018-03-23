@@ -3118,7 +3118,7 @@
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 0em 5em 0em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3152,11 +3152,10 @@
 
 				#header.alt .logo img {
 					display: block;
+					padding: 10px;
 					margin: 0 auto;
-					width: 100px;
-					height: 100px;
+					width: 500px;
 					max-width: 75%;
-					border-radius: 50%;
 				}
 
 		@media screen and (max-width: 1280px) {
@@ -3166,7 +3165,7 @@
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 0em 4em 0em 4em ;
 				}
 
 		}
@@ -3178,7 +3177,7 @@
 			}
 
 				#header.alt {
-					padding: 5em 3em 2em 3em ;
+					padding: 0em 3em 0em 3em ;
 				}
 
 		}
@@ -3199,7 +3198,7 @@
 					}
 
 				#header.alt {
-					padding: 4em 2em 1em 2em ;
+					padding: 0em 2em 0em 2em ;
 				}
 
 					#header.alt h1 {
@@ -3215,7 +3214,7 @@
 			}
 
 				#header.alt {
-					padding: 4em 1.5em 1em 1.5em ;
+					padding: 0em 1.5em 0em 1.5em ;
 				}
 
 		}
@@ -3227,7 +3226,7 @@
 			}
 
 				#header.alt {
-					padding: 3.5em 1em 0.5em 1em ;
+					padding: 0em 1em 0em 1em ;
 				}
 
 		}
